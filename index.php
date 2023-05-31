@@ -1,5 +1,9 @@
 
-
+<?php 
+/*
+Template Name: Home Template
+*/
+?>
 
 <?php get_header();?>
     <section class="container d-flex align-items-center justify-content-center my-5">
@@ -51,7 +55,14 @@
 
     <section class="container my-5">
       <div class="row d-flex align-items-stretch h-100">
-        <div class="col-lg-6">
+   
+
+
+      
+      
+      
+      
+      <div class="col-lg-6">
           <div class="border p-3 bg-cc9d2f h-100">
             <h1 class="display-4">Quote Title</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at faucibus tellus, eu convallis lectus.</p>

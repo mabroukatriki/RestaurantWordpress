@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/homeStyle.css">  
-  
 </head>
-
-
 <body class="custom-bg">
     
 
@@ -20,9 +17,12 @@
               
             <div class="text-center">
               <nav class="nav justify-content-center">
-                  <a href="<?php echo get_template_directory_uri();?>/index.html" class="nav-link" style="color: white;">Home</a>
-                 <a href="<?php echo get_template_directory_uri();?>/about.html" " class="nav-link" style="color: white;">About</a>
-                  <a href="<?php echo get_template_directory_uri();?>/menu.html" class="nav-link" style="color: white;">Menu</a>
+              <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: white;">Home</a>
+                <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: white;">About</a>
+                <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: white;">Menu</a>
+                
+                
+
               </nav>
           </div> 
 

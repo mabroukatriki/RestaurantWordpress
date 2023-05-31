@@ -1,11 +1,26 @@
   
+      <?php
+/*
+Template Name: Menu Template
+*/
+?>
   
-<?php get_header();?>
 
+  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+          <div class="container">
+              <img src="<?php echo get_template_directory_uri();?>/image/logo1.png" alt="Logo Maiz" width="100" height="100">
+              
+            <div class="text-center">
+              <nav class="nav justify-content-center">
+              <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: white;">Home</a>
+                <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: white;">About</a>
+                <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: white;">Menu</a>
+                
+                
 
-
-
-
+              </nav>
+          </div> 
+ 
     <div class="container">
       <p style="color: #CC9D2F; display: inline-block; float: left;">OUR MENU</p><br>
       <h1 style="color: #ffffff; display: inline-block;">Discover<br> Our Menu</h1>
@@ -57,7 +72,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="image/Kabsa.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_template_directory_uri();?>/image/Kabsa.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Kabsa</p>
             </div>
@@ -145,7 +160,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="image-container d-flex align-items-center justify-content-center py-5 m-10">
-                    <img src="image/carteRouge.png" class="image-style">
+                    <img src="<?php echo get_template_directory_uri();?>/image/carteRouge.png" class="image-style">
                 </div>
             </div>
         </div>

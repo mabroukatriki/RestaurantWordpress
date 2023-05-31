@@ -7,28 +7,31 @@ Template Name: About Template
 
 <html <?php language_attributes();?>>
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />">
+
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>design-restaurant</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css">  
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/aboutStyle.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
 </head>
 
 
 <body style="background-color: #CC9D2F;">
     <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
         <div class="container">
-            <img src="image/maiz2.png" alt="Logo Maiz" width="100" height="100">
+            <img src="<?php echo get_template_directory_uri();?>/image/maiz2.png" alt="Logo Maiz" width="100" height="100">
             
             <div class="text-center">
                 <nav class="nav justify-content-center">
-                    <a href="index.html" class="nav-link" style="color: #5B0017;">Home</a>
-                    <a href="about.html" class="nav-link" style="color: #5B0017;">About</a>
-                    <a href="menu.html" class="nav-link" style="color: #5B0017;">Menu</a>
-                    <a href="#" class="nav-link" style="color: #5B0017;">Venue</a>
+                  
+                    <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: #5B0017 ;">Home</a>
+                    <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: #5B0017 ;">About</a>
+                    <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: #5B0017 ;">Menu</a>
                 </nav>
             </div>
+
 
             <div class="text-right">
                 <div class="p-2 border" style="background-color: #5B0017;">
@@ -75,7 +78,7 @@ Template Name: About Template
                 </div>
             </div>
         </div>
-    
+     
       
         <div class="bg-color-block">
             <div class="container py-4">
@@ -85,6 +88,7 @@ Template Name: About Template
             </div>
         </div>
         
+
         <section class="container my-5 bg-color-block" style="background-color: #5B0017;">
             <div class="row d-flex align-items-stretch h-100">
               <div class="col-lg-6">
