@@ -6,20 +6,41 @@ Template Name: Menu Template
 ?>
   
 
-  <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
-          <div class="container">
-              <img src="<?php echo get_template_directory_uri();?>/image/logo1.png" alt="Logo Maiz" width="100" height="100">
-              
-            <div class="text-center">
-              <nav class="nav justify-content-center">
-              <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: white;">Home</a>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/menuStyle.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    
+</head>
+<body class="custom-bg">
+
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+      <div class="container">
+        <img src="<?php echo get_template_directory_uri();?>/image/logo1.png" alt="Logo Maiz" width="100" height="100">
+  
+        <div class="text-center">
+          <nav class="nav justify-content-center">
+                <a href="<?php echo get_permalink(get_page_by_path('index')); ?>" class="nav-link" style="color: white;">Home</a>
                 <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="nav-link" style="color: white;">About</a>
                 <a href="<?php echo get_permalink(get_page_by_path('menu')); ?>" class="nav-link" style="color: white;">Menu</a>
-                
-                
-
-              </nav>
-          </div> 
+          </nav>
+        </div>
+  
+        <div class="text-md-right">
+          <div class="p-2 border" style="background-color: #CC9D2F;">
+            <span class="font-weight-bold">Book Now</span>
+          </div>
+        </div>
+      </div>
+    </nav>
  
     <div class="container">
       <p style="color: #CC9D2F; display: inline-block; float: left;">OUR MENU</p><br>

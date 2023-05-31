@@ -47,8 +47,8 @@ Template Name: About Template
                 <div class="col-lg-6">
                     <h1 style="color: #5B0017;">Our Story</h1>
                     <p style="color: #5B0017;">We’re an absolute leader in the Saudi cuisine-themed restaurants.</p>
-                    <img src="image/picture.png" alt="Image 1" width="200" height="200">
-                    <img src="image/picture.png" alt="Image 2" width="200" height="200">
+                    <img src="<?php echo get_template_directory_uri();?>/image/picture1.png" alt="Image 1" width="200" height="200">
+                    <img src="<?php echo get_template_directory_uri();?>/image/picture2.png" alt="Image 2" width="200" height="200">
                 </div>
                 <div class="col-lg-6">
                     <h2 style="color: #FFFFFF;">One of the best restaurants in Saudi Arabia</h2>
@@ -146,7 +146,7 @@ Template Name: About Template
                     </div>
                     <div class="col-lg-6">
                       <div class="d-flex align-items-center justify-content-center py-5" style="margin: 10px;">
-                        <img src="image/carte.png" >
+                        <img src="<?php echo get_template_directory_uri();?>/image/carte.png" >
                       </div>
                     </div>
                   </div>
