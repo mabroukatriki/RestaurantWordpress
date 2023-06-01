@@ -82,7 +82,7 @@ Template Name: Menu Template
   
         <div class="col-md-4">
           <div class="card mb-3">
-            <img src="image/Zubiam.png" class="card-img-top" alt="...">
+            <img src="<?php echo get_template_directory_uri();?>/image/Zubiam.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Zubiam</p>
             </div>
@@ -196,5 +196,6 @@ Template Name: Menu Template
 
 
 
+<?php get_footer(); ?>
 
-<?php get_footer();?>
+</html>
