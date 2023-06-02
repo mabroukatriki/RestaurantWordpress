@@ -42,7 +42,6 @@
             </div>
             </footer>
             <script src="<?php echo get_template_directory_uri();?>/js/bootstrap.bundle.min.js"></script>
-            
 </body>
 
 </html>
